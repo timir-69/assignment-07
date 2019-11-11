@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+
+.container{
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.row{
+
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.logo{
+	max-width: 30%;
+	flex-basis: 30%;
+}
+.logo a{
+	color: #28377e;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+header{
+	padding: 30px 0;
+
+}
+
+header .row{
+
+	align-items: center;
+}
+
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+nav{
+
+	max-width: 70%;
+	flex-basis: 70%;
+}
+nav ul{
+	justify-content: flex-end;
+}
+nav ul li {}
+nav ul li a {
+	color: #28377e;
+	font-size: 12px;
+	text-transform:uppercase;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+	display: block;
+	padding: 0 14px;
+
+}
+nav ul li a:hover {}
+
+.banner-section{
+	position: relative;
+	overflow: hidden;
+}
+
+.bg-2{
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+.bg-1{
+
+}
+.click-arrow{
+	position: absolute;
+	bottom: 80px;
+	font-size: 25px;
+	right: 50%;
+	transform: translate(50%);
+	color: white;
+	animation-name: click-arrow;
+	animation-duration: 3s;
+	animation-timing-function: forwards;
+	animation-iteration-count: infinite;
+}
+@keyframes click-arrow{
+	0%{
+	bottom: 80px;
+
+	}
+	50%{
+
+	bottom: 40px;
+
+	}
+	100%{
+
+	bottom: 80px;
+
+	}
+
+}
+
+.banner-content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-width: 800px;
+	transform: translate(-50%, -50%);
+	text-align: center;
+
+}
+
+.banner-content h1{
+	color: white;
+	font-size: 70px;
+	text-transform: uppercase;
+}
+
+.about-us{
+	padding: 120px 0 200px;
+}
+.about-us-content{
+	max-width: 70%;
+	flex-basis:70%;
+	padding-right: 250px;
+	line-height: 2;
+}
+.heading{}
+
+.heading span{
+	background-color: #f2622c;
+	width: 60px;
+	height:4px;
+	display: block;
+}
+.heading h1{
+	margin-top: 20px;
+	font-size: 36px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #28377e;
+	margin-bottom: 20px;
+}
+p{
+	color: gray;
+	margin-bottom: 30px;
+	font-size: 12px;
+}
+.about-us-img{
+	max-width: 30%;
+	flex-basis:30%;
+}
+.about-us-img img{}
+
+
+.whatwedo-section{
+	background-color: #f7f8f8;
+	background-image: url(../images/whatwedo-bg.png);
+	background-repeat: no-repeat;
+	padding: 80px 0 120px;
+	background-position: bottom right;
+
+}
+.whatwedo-section .heading{
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.whatwedo-section .heading span{
+    margin: auto;
+}
+.whatwedo-section .heading  h1{}
+
+.whatwedo{
+	max-width: 33.33%;
+    flex-basis: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+.whatwedo-box span {
+	position: absolute;
+    height: 40%;
+    width: 100%;
+    bottom: 0;
+    opacity: 0;
+    background-color: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#28377e+0,28377e+100&0+0,1+94 */
+	background: -moz-linear-gradient(top,  rgba(40,55,126,0) 0%, rgba(40,55,126,1) 94%, rgba(40,55,126,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(40,55,126,0) 0%,rgba(40,55,126,1) 94%,rgba(40,55,126,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(40,55,126,0) 0%,rgba(40,55,126,1) 94%,rgba(40,55,126,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0028377e', endColorstr='#28377e',GradientType=0 ); /* IE6-9 */
+    transition:all 0.3s;
+    display: block;
+}
+
+.whatwedo-box:hover span {
+	opacity: 1;
+	height: 100%;}
+
+.whatwedo-box{
+	position: relative;
+}
+.whatwedo-box h2{
+	color: white;
+	font-size: 26px;
+	text-transform: uppercase;
+	position: absolute;
+	top: 50%;
+	transition:all 0.3s;
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+	opacity: 0;
+
+}
+.whatwedo-box img {
+	width: 100%;
+
+}
+
+.whatwedo-box:hover h2{
+	top: 50%;
+	transform: translateY(-50%);
+	opacity: 1;
+}
+.whatwedo-box a {
+	max-width: 10%;
+	position: absolute;
+	bottom: 70px;
+	z-index: 1;
+	left:50%;
+	transform:translateX(-30%);
+	transition:all 0.3s;
+	opacity: 0;
+	animation-name: arrow;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+    
+}
+
+.whatwedo-box:hover a {
+	left:40%;
+	opacity: 1;
+	transform:translateX(-50%);
+
+}
+
+
+@keyframes arrow{
+	0%{
+		left: 50%;
+	}
+	50%{
+		left: 35%;
+	}
+	100%{
+		left: 50%;
+	}
+}
+
+.whatwedo-box a img {
+	
+}
+
+.attorney-section {
+
+background: url(../images/our-arttorneys.png);
+
+padding: 220px 200px;
+
+max-width: 100%;
+}
+.attorney-section .heading {
+
+max-width: 30%;
+
+flex-basis: 30%;
+
+padding-top: 150px;
+}
+.attorney-section a {
+    color: #f2622c;
+    font-weight: 700;
+}
+.attorney-section p {
+    color: #cccccc;
+    line-height: 2;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+.attorney-section span {}
+.attorney-section h1 {
+    color: white;
+}
+.attorney{
+
+max-width: 70%;
+
+flex-basis: 70%;
+
+box-sizing: border-box;
+
+justify-content: flex-end;
+
+padding-left: 100px;
+
+position: relative;
+
+display: block;
+}
+
+.attorney-box {
+    width: 50%;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+.attorney-box img {
+    max-width: 100%;
+    display: block;
+}
+.attorney-box h2 {
+    bottom: 70px;
+    position: absolute;
+    left: 30px;
+    color: white;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.attorney-box .image{
+    position: relative;
+    max-width: 100%;
+}
+.attorney-box span{
+    height: 100%;
+    width: 100%;
+     /* FF3.6-15 */
+     /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(40,55,126,0) 0%,rgba(40, 55, 126, 0.51) 94%,rgba(40, 55, 126, 0.57) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0028377e', endColorstr='#28377e',GradientType=0 ); /* IE6-9 */
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+.language-section .row {justify-content: center;}
+
+.language-section{padding: 130px 140px;}
+.language-section .heading{
+    text-align: center;
+    padding-bottom: 100px;
+}
+.language-section span{
+    margin: auto;
+}
+.language-content{
+    max-width: 25%;
+    flex-basis: 25%;
+}
+.content{
+    margin-left: 70px;
+}
+.content h2 {
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    color: #28377e;
+}
+.content p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+.content a {
+    font-size: 12px;
+    color: #f2622c;
+    font-weight: 700;
+}
+
+.contact-form{
+	background: #28377e;
+	padding: 70px 0 95px;
+}
+
+.contact-form .text h1{
+	color: #fff;
+	line-height: 2;
+	font-size: 40px;
+}
+
+.text{
+
+text-align: center;
+
+text-transform: uppercase;
+}
+.form-detail{
+	
+}
+
+form{
+	width: 520px;
+	justify-content: center;
+	position: relative;
+}
+
+.text span{
+    background-color: #f2622c;
+    width: 60px;
+    height: 4px;
+    display: block;
+    margin: auto;
+}
+
+form input{
+	width: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #4759a7;
+	margin-bottom: 50px;
+	font-size: 14px;
+	color: #fff;
+	padding-bottom: 10px;
+}
+
+form input[type="submit"]{
+	border-bottom: none;
+	background-color: #f2622c;
+	width: auto;
+	padding: 10px 100px;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.contact-form .row{
+	justify-content: center;
+	margin-top: 80px;
+}
+
+.row input[type="submit"]{
+	justify-content: center;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 102%;
+}
+
+footer{
+	padding: 50px 0;
+	background-color: #0c1234;
+}
+.left{
+	max-width: 50%;
+	flex-basis: 50%;
+}
+
+.left p{
+	color: #616ca8;
+	font-size: 14px;
+}
+
+.right{
+	max-width: 50%;
+	flex-basis: 50%;
+	
+}
+.right a{
+	text-decoration: none;
+	color: #b1b8dd;
+	font-size: 18px;
+	margin-left: 24px;
+}
+
+.right .row {
+	justify-content: flex-end;
+}
